@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weniv Blog</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <div id="app">
+        <header>
+            <div class="inner">
+                <h1 class="logo">
+                    <a href="./index.html">
+                        <img src="./assets/img/Logo.svg" alt="B. My Blog">
+                    </a>
+                </h1>
+
+                <nav>
+                    <ul id="nav-guest">
+                        <li>
+                            <a href="./login.html">
+                                <img src="./assets/img/Button/Login.svg" alt="로그인">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./signup.html">
+                                <img src="./assets/img/Button/Register.svg" alt="회원가입">
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul id="nav-user" style="display: none;">
+                        <li>
+                            <a href="./mypage.html">
+                                <img src="./assets/img/profile/none.svg" alt="마이페이지" id="user-profile">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./post-write.html">
+                                <img src="./assets/img/Button/write.svg" alt="글쓰기">
+                            </a>
+                        </li>
+                        <li>
+                            <button id="btn-logout" type="button">
+                                <img src="./assets/img/Button/Logout.svg" alt="로그아웃">
+                            </button>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        </div>
+
+    <script src="./js/api.js" defer></script>
+    <script src="./js/utils.js" defer></script>
+    <script src="./js/main.js" defer></script>
+  </body>
+</html> 
