@@ -213,7 +213,6 @@ nav img {
 
 footer {
     width: 100%;
-    padding: 80px 0;
     background-color: #fff;
 }
 
@@ -240,6 +239,7 @@ footer .inner {
     background: none;
     border: none;
     cursor: pointer;
+    margin-top: 16px;
 }
 
 #btn-top img {
