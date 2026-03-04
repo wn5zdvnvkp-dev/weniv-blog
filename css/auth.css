@@ -1,0 +1,101 @@
+.login-page {
+    width: 100%;
+    position: relative;
+    background-color: #f9f9f9;
+    min-height: 800px;
+    display: flex;
+    justify-content: center;
+    padding-top: 186px; 
+    align-items: flex-start;
+}
+
+.login-page::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 420px;
+    background: url('../assets/img/banner/background\ 1.svg') no-repeat center/cover;
+    z-index: 0;
+}
+
+.auth-box {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 600px;
+    background-color: #fff;
+    padding: 80px 140px;
+    border-radius: 10px;
+    height: auto;
+    box-sizing: border-box;
+}
+
+.auth-box h2 {
+    font-family: 'Pretendard';
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 48px;
+    color: #000;
+}
+
+.input-group {
+    margin-bottom: 40px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    font-family: 'Pretendard';
+}
+
+.input-group input {
+    width: 100%;
+    height: 40px;
+    padding: 0 17.82px;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    background-color: #F5F5F5; 
+    font-family: 'Pretendard';
+    font-size: 14px;
+    transition: all 0.2s ease;
+    box-sizing: border-box;
+}
+
+.input-group input:focus {
+    outline: none;
+    border: 1px solid #279BDC80;
+    background-color: #fff;
+}
+
+.input-group input:not(:placeholder-shown):not(:focus) {
+    background-color: #fff;
+    border: 1px solid #DDDDDD;
+}
+
+.input-group input::placeholder {
+    color: #6F6F6F;
+}
+
+.input-group input:focus::placeholder {
+    color: transparent;
+}
+
+.btn-login {
+    margin-top: -16px;
+}
+
+.link-register {
+    display: block;
+    text-align: right;
+    margin-top: 16px;
+    font-family: 'Pretendard';
+    font-weight: 400;
+    font-size: 16px;
+    color: #000;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
