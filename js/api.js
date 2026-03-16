@@ -1,4 +1,4 @@
-const BASE_URL = 'https://dev.wenivops.co.kr/services/fastapi-crud/1';
+const BASE_URL = 'https://dev.wenivops.co.kr/services/fastapi-crud/38';
 
 const getTokens = () => {
     return localStorage.getItem('access_token');
