@@ -123,3 +123,17 @@ hr {
     width: 100%;
     margin: 39px 0;
 }
+
+.write-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.write-title {
+    flex-grow: 1;
+    border: none;
+    font-size: 32px;
+    font-weight: 700;
+    outline: none;
+    font-family: 'Pretendard';
+}

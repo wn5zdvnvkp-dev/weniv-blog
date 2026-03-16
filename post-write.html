@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>글쓰기</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/post.css">
+  </head>
+  <body>
+    <div id="app">
+        <header>
+            <div class="inner">
+                <h1 class="logo">
+                    <a href="./index.html">
+                        <img src="./assets/img/Logo.svg" alt="B. My Blog">
+                    </a>
+                </h1>
+
+                    <ul id="nav-user">
+                        <li>
+                            <a href="./mypage.html">
+                                <img src="./assets/img/profile/none.svg" alt="마이페이지" id="user-profile">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./post-write.html">
+                                <img src="./assets/img/Button/write.svg" alt="글쓰기">
+                            </a>
+                        </li>
+                        <li>
+                            <button id="btn-logout" type="button">
+                                <img src="./assets/img/Button/Logout.svg" alt="로그아웃">
+                            </button>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </div>
+
+    <main class="post-write">
+        <section class="post-banner">
+            <div class="inner">
+                <div class="banner-date">
+                    <span class="month">Apr.</span>
+                    <span class="day">24</span>
+                    <span class="weekday">Sunday</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="post-container">
+            <div class="inner">
+                <form class="post-article write-form">
+                    <div class="article-header">
+                        <a href="index.html" class="btn-back">
+                            <img src="./assets/img/ArrowLeft-blue.svg" alt="뒤로가기">
+                        </a>
+
+                        <input type="text" class="write-title" placeholder="Title" required>
+
+                        <div class="article-btns">
+                            <button type="button" class="btn-delete-circle">
+                                <img src="./assets/img/Button/Delete.svg" alt="삭제">
+                            </button>
+                            <button type="submit" class="btn-save">
+                                <img src="./assets/img/Button/save-2.svg" alt="저장">
+                            </button>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <div class="article-content">
+                        <textarea class="write-content" placeholder="Tell your story..."></textarea>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="inner">
+            <p class="copyright">
+                ©Wenaiv Corp.
+            </p>
+            <button type="button" id="btn-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})"><img src="./assets/img/Button/Top.svg" alt="맨 위로 이동"></button>
+        </div>
+    </footer>
+  </body>
+</html> 
