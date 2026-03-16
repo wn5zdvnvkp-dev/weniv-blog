@@ -278,7 +278,7 @@ display: flex;
     margin-bottom: 8px;
 }
 
-.card-tags .tag {
+.tag {
     font-size: 12px;
     color: #37abec;
     margin-right: 12px;
