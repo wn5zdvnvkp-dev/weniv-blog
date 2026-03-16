@@ -107,6 +107,19 @@ nav img {
     align-items: center;
 }
 
+#nav-user li {
+    display: flex;
+    align-items: center;
+}
+
+#user-profile {
+    width: 44px !important;
+    height: 44px !important;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+}
+
 .profile img {
     width: 44px;
     height: 44px;
@@ -117,6 +130,8 @@ nav img {
 
 #nav-user img:not(#user-profile) {
     height: 40px;
+    width: auto;
+    display: block;
 }
 
 #btn-logout {
