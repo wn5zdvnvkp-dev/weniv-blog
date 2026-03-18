@@ -62,7 +62,7 @@
                         <input type="text" class="write-title" placeholder="Title" required>
 
                         <div class="article-btns">
-                            <button type="button" class="btn-delete-circle">
+                            <button type="button" class="btn-delete-circle" onclick="openModal()">
                                 <img src="./assets/img/Button/Delete.svg" alt="삭제">
                             </button>
                             <button type="submit" class="btn-save">
@@ -81,6 +81,20 @@
         </section>
     </main>
 
+    <div id="modal-backdrop" class="modal-backdrop" style="display: none;">
+        <div class="alert-modal">
+            <h3 class="alert-title">Delete story</h3>
+            <p class="alert-message">Are you sure you want to delete this story?</p>
+            
+            <div class="alert-btns">
+                <button type="button" class="btn-cancel" onclick="closeModal()">Cancel</button>
+                <button type="button" class="btn-delete-confirm">
+                    <img src="./assets/img/Button/delete-active-1.svg" alt="">
+                </button>
+            </div>
+        </div>
+    </div>
+
     <footer>
         <div class="inner">
             <p class="copyright">
@@ -89,5 +103,8 @@
             <button type="button" id="btn-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})"><img src="./assets/img/Button/Top.svg" alt="맨 위로 이동"></button>
         </div>
     </footer>
+    <script src="./js/api.js" defer></script>
+    <script src="./js/utils.js" defer></script>
+    <script src="./js/post.js" defer></script>
   </body>
 </html> 
